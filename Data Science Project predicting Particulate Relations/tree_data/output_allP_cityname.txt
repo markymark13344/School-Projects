@@ -1,0 +1,50 @@
+--- Decision Tree ---
+
+MAE for Decision Tree: 6.5486849088062975
+MSE for Decision Tree: 92.75654360844187
+RMSE for Decision Tree: 9.631019863360363
+Accuracy: 0.7574119069852789
+Best Estimator -- Decision Tree: DecisionTreeRegressor(ccp_alpha=0.01, criterion='friedman_mse', max_depth=8)
+Best Parameters -- Decision Tree: {'ccp_alpha': 0.01, 'criterion': 'friedman_mse', 'max_depth': 8}
+
+
+
+PM10      1.182 +/- 0.016
+CO        0.177 +/- 0.007
+cityname  0.037 +/- 0.004
+SO2       0.020 +/- 0.002
+NO2       0.015 +/- 0.002
+Fitting 5 folds for each of 3 candidates, totalling 15 fits
+--- Bagging Data ---
+
+MAE for Bagging: 5.945088125
+MSE for Bagging: 75.30076409062498
+RMSE for Bagging: 8.677601286681993
+Accuracy: 0.8030643655674811
+Best Estimator -- Bagging: BaggingRegressor(base_estimator=DecisionTreeRegressor(), n_estimators=100,
+                 n_jobs=-1)
+Best Parameters -- Bagging: {'n_estimators': 100, 'n_jobs': -1}
+
+
+
+PM10      1.229 +/- 0.015
+CO        0.195 +/- 0.007
+cityname  0.065 +/- 0.003
+SO2       0.031 +/- 0.002
+NO2       0.021 +/- 0.002
+O3_8      0.016 +/- 0.002
+--- Forest Data ---
+
+MAE for Forest: 5.927012708333334
+MSE for Forest: 74.910075665625
+RMSE for Forest: 8.655060696819232
+Accuracy: 0.8040861410271593
+
+
+
+PM10      1.231 +/- 0.015
+CO        0.196 +/- 0.007
+cityname  0.067 +/- 0.003
+SO2       0.030 +/- 0.001
+NO2       0.020 +/- 0.002
+O3_8      0.016 +/- 0.002
